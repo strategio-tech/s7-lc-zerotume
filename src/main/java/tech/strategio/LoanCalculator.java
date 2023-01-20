@@ -7,13 +7,19 @@ public class LoanCalculator {
     /**
      * TODO: finish out this JavaDoc comment block.
      * FIXME: WHAT DOES THIS METHOD DO?
-     * 
+     *
      * @param ???
      * @return ???
      */
     static int getRemainingAmountIn3Months(int amount) {
         // TODO: Rewrite this method
-        return -1;
+        int acc = amount;
+        int interest = 0;
+        for(int i = 1; i <= 3; i++){
+            interest = (int)((double)(acc) * 0.1);
+            acc -= interest;
+        }
+        return acc;
     }
 
     public static void main(String[] args) {
