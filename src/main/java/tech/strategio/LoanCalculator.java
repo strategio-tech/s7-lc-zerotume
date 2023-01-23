@@ -12,7 +12,10 @@ public class LoanCalculator {
      * @return ???
      */
     static int getRemainingAmountIn3Months(int amount) {
-        // TODO: Rewrite this method
+        /*
+        * The function for calculating the remaining loan amount
+        * after 3 months.
+        */
         int acc = amount;
         int interest = 0;
         for(int i = 1; i <= 3; i++){
